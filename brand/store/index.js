@@ -104,7 +104,7 @@ function searchStore() {
   [...targets].forEach((item) => {
     item.addEventListener("click", () => {
       console.dir(item);
-      window.location = "/order/type/?tf=" + item.attributes[0].value;
+      window.location = "/bon/order/type/?tf=" + item.attributes[0].value;
     });
   });
 
