@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/favicon.ico" />
+    <title>본아이에프 - 주문하기</title>
+
+    <!-- 폰트 및 리셋 불러오는 부분 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif+KR:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/global/styles/font.css" />
+    <link rel="stylesheet" href="/global/styles/reset.css" />
+
+    <!-- 페이지별로 필요한 스타일과 스크립트 불러오는 부분 -->
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <section class="leftContainer center">
+      <a class="homeBtn" href="https://www.bonif.co.kr/">
+        <img src="./assets/logo2.svg" alt="logo2" />
+      </a>
+
+      <div class="imgBox row">
+        <div class="infoImgWrapper">
+          <a class="homeBtn" href="/group/info">
+            <img
+              class="infoImg"
+              src="./assets/20250609_PYz_1749440830380_94Kb.jpg"
+              alt="infoImg"
+            />
+          </a>
+
+          <a class="homeBtn" href="https://www.bonif.co.kr/">
+            <span>본 홈페이지로 바로가기</span>
+            <img class="chevronRight" src="./assets/arrow6.svg" alt="arrow" />
+          </a>
+        </div>
+
+        <div class="col qr">
+          <div class="qrWrapper col center">
+            <div class="qrImgWrapper">
+              <img class="qrImg" src="./assets/android-qr-img1.png" alt="qr" />
+            </div>
+            <img class="android" src="./assets/android.png" alt="android" />
+          </div>
+
+          <div class="qrWrapper col center">
+            <div class="qrImgWrapper">
+              <img class="qrImg" src="./assets/ios-qr-img1.png" alt="qr" />
+            </div>
+            <img class="ios" src="./assets/ios.png" alt="ios" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rightContainer">
+      <div class="card">
+        <div class="rightContent">
+          <div>
+            <img src="./assets/logo.svg" alt="logo" />
+          </div>
+
+          <div class="midText">
+            <span> 주문 유형을 선택해 주세요. </span>
+          </div>
+
+          <div class="btnWrapper">
+            <a
+              id="delivery"
+              href="https://www.bonif.co.kr/order/store/list?ordDiv=2"
+            >
+              <div class="orderBtn">
+                <img class="icon" src="./assets/bike.png" alt="bike" />
+                <span class="btnText">배달</span>
+              </div>
+            </a>
+
+            <a
+              id="takeOut"
+              href="https://www.bonif.co.kr/order/store/list?ordDiv=1"
+            >
+              <div class="orderBtn">
+                <img class="icon" src="./assets/pack.png" alt="pack" />
+                <span class="btnText">포장</span>
+              </div>
+            </a>
+
+            <a
+              id="store"
+              href="https://www.bonif.co.kr/order/store/list?ordDiv=3"
+            >
+              <div class="orderBtn">
+                <img class="icon" src="./assets/market.png" alt="market" />
+                <span class="btnText">매장이용</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <span class="copyright"
+            >COPYRIGHT 2018 BONIF CO. LTD. ALL RIGHTS RESERVED.</span
+          >
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

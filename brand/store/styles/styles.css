@@ -1,0 +1,541 @@
+.heading-h1 {
+  /* 패딩 추가, 폰트 사이즈, 폰트 웨이트 수정 2.25 */
+  padding-top: 80px;
+  font-size: 57px;
+  font-weight: 500;
+  font-family: "suit";
+}
+
+.find-store .board-form {
+  padding: 4.375rem min(12.5vw, 15rem) 3.75rem;
+}
+
+.max_1440 {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* 좌우 여백 유지 */
+.board-form {
+  padding: 0 120px;
+}
+
+/* 전체 탭 영역 */
+.list-tab.outer-line {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin-top: 40px;
+  list-style: none;
+  justify-content: center; /* 가운데 정렬 (원하면 left로 변경 가능) */
+  height: 80px;
+}
+
+/* 각각의 li를 네모 박스로 */
+.list-tab.outer-line li {
+  flex: 1 1 0;
+  min-width: 0;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  transition: 0.3s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 링크 전체 클릭 가능 */
+.list-tab.outer-line li a {
+  display: block;
+  padding: 16px 28px;
+  text-decoration: none;
+  color: #686868;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+
+  white-space: normal;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+/* active 상태 */
+.list-tab.outer-line li.active {
+  border-color: #000000;
+}
+
+.container {
+  display: block;
+  max-width: 1440px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+/* 위 영역 */
+.find-store .board-form {
+  padding: 4.375rem min(12.5vw, 15rem) 3.75rem;
+}
+
+.max_1440 {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.board-form .top-wrap {
+  position: relative;
+}
+
+/* 사각 보드 영역 */
+.board-form .top-wrap .list-tab.outer-line {
+  flex-wrap: unset;
+}
+
+.board-form .top-wrap .list-tab {
+  display: flex;
+  margin-top: 60px;
+  border-top: 1px solid #e2e4e6;
+  border-left: 1px solid #e2e4e6;
+}
+
+.board-form .top-wrap .list-tab.outer-line li {
+  width: 100%;
+}
+
+.board-form .top-wrap .list-tab li {
+  height: auto;
+  border-right: 1px solid #e2e4e6;
+  border-bottom: 1px solid #e2e4e6;
+  box-sizing: border-box;
+  font-size: 20px;
+  color: #4e5256;
+  padding: 1.125rem 0.75rem;
+}
+
+.board-form .top-wrap .list-tab li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+.board-form .top-wrap .list-tab li.active {
+  border: 1px solid #000;
+  font-weight: bold;
+  color: #1d1b20;
+}
+
+.store-wrap {
+  width: 400px;
+  min-width: 400px;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.store-wrap h2 {
+  margin-bottom: 30px;
+  font-size: 22px;
+  color: #333;
+}
+
+/* 검색 영역 정렬 */
+.search-row {
+  color: #adadad;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.search-row .first-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-row .first-row select {
+  flex: 1;
+  min-width: 120px;
+}
+
+.search-row .first-row button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #6b4f2c;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+/* 매장명 select와 버튼 wrapper */
+.search-store-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* 매장명 select */
+#searchStore {
+  background-color: #f3f3f3a4;
+  width: 100%;
+  height: 60px;
+  padding: 8px 40px 8px 10px; /* 오른쪽 공간 확보 */
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+/* 돋보기 버튼 */
+.search-btn {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  cursor: pointer;
+  color: #333;
+}
+
+/* select 스타일 */
+.search-row select {
+  background-color: #f3f3f3a4;
+  height: 60px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  min-width: 130px;
+  font-size: 18px;
+}
+
+/* 첫 번째 줄의 select는 유연하게 너비 */
+.search-line:first-child select {
+  flex: 1; /* 버튼 제외하고 두 셀렉트가 동일 너비 조절 가능 */
+  min-width: 120px;
+}
+
+/* 두 번째 줄(매장명) select */
+.search-line:last-child select {
+  width: 100%; /* 부모(search-line) 너비 전체 사용 */
+  box-sizing: border-box; /* padding 포함 */
+}
+
+/* 버튼 스타일 */
+.search-row button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-row select {
+  color: #999999;
+}
+
+.search-row button:hover {
+  background-color: #c7c7c7;
+}
+
+/* 결과 영역 기본 상태 (검색 전) */
+.store-result-scroll {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 세로 가운데 */
+  align-items: center; /* 가로 가운데 */
+  text-align: center;
+  min-height: 300px; /* 높이 확보 (중요 ⭐) */
+}
+/* 검색 결과 리스트 스크롤 영역 */
+#store-list.store-result-scroll {
+  overflow-y: auto;
+  max-height: 700px;
+  display: block;
+  padding: 10px 20px;
+}
+
+/* 매장 이미지 */
+.img-wrap img {
+  width: 70px; /* 원하는 크기 */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* 매장 카드 전체 */
+.store-item-card {
+  padding: 25px 0;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.store-info-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.store-name {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1d1b20;
+}
+
+.store-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.favorite-star {
+  cursor: pointer;
+  color: #f5b400; /* 노란색 별 */
+  font-size: 24px;
+}
+
+/* 주소 및 전화번호 */
+.store-details .addr {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.store-details .tel {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* 3단 액션 버튼 스타일 (중요!) */
+.store-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.action-btn {
+  flex: 1;
+  height: 48px;
+  background: #fff;
+  border: 1px solid #8c150d; /* 본죽 특유의 짙은 레드 */
+  color: #8c150d;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.action-btn.active {
+  cursor: pointer;
+  opacity: 1;
+  pointer-events: all;
+}
+
+option {
+  color: #999999;
+}
+
+.store-layout {
+  display: flex !important;
+  flex-direction: row in !important;
+  flex-wrap: nowrap !important;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+}
+
+/* 왼쪽 셀렉트 영역 */
+.side-content {
+  flex: 0 0 450px; /* 고정 또는 원하는 너비 */
+  width: 400px;
+}
+
+/* 오른쪽 지도 영역 */
+.map-content {
+  flex: 1; /* 남은 공간 채우기 */
+  min-width: 500px;
+  position: relative; /* 너무 좁아지지 않게 */
+}
+
+/* 지도 div */
+#map {
+  width: 100% !important;
+  height: 700px; /* 또는 원하는 높이 */
+}
+
+.map-wrapper {
+  position: relative;
+}
+
+.map-tags {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.map-tags span {
+  background-color: white;
+  color: #505050;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 16px;
+  box-shadow: 0px 3px 6px #999999;
+}
+
+/* 셀렉트 매장 사이 매장 4개 */
+
+/* 전체 컨테이너: 리스트와 팁 버튼을 양옆으로 배치 */
+.confirm-list-wrap {
+  display: flex;
+  align-items: center; /* 세로 중앙 정렬 */
+  padding: 20px 30px;
+  background-color: #fff;
+  max-width: 500px; /* 적절한 너비 설정 */
+}
+
+/* 왼쪽 2x2 리스트 구역 */
+.confirm-list {
+  display: flex;
+  flex-wrap: wrap; /* 2줄로 넘어가게 설정 */
+  width: calc(100% - 60px); /* 팁 버튼 공간 제외 */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.confirm-list li {
+  width: 50%; /* 반씩 차지하여 2열로 만듦 */
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 15px;
+  color: #333;
+}
+
+/* 아이콘 공통 스타일 - 핵심: 이미지 크기를 부모에 맞춤 */
+.confirm-list li i {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  flex-shrink: 0; /* 아이콘 크기 유지 */
+}
+
+.confirm-list li i img,
+.icon-tooltip img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* 이미지 비율 유지하며 꽉 채움 */
+  display: block;
+}
+
+/* 오른쪽 팁(i) 버튼 구역 */
+.tip-wrap {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #eee; /* 세로 구분선 */
+  margin-left: 10px;
+}
+
+.btn-tip {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.icon-tooltip {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  opacity: 0.5; /* 살짝 흐리게 처리 (사진 느낌) */
+}
+
+/* 셀렉트 아래 매장입력 */
+.nodata-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0;
+}
+
+.nodata-wrap > p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #888d91;
+  margin-top: 30px;
+}
+
+/* 모달 배경 */
+/* 수정 2.25 */
+.modal {
+  display: none; /* 중요: 처음엔 숨김 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 모달 박스 */
+/* 수정 width, hegiht */
+.modal-content {
+  background-color: #fff;
+  width: 400px;
+  height: 251px;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  justify-content: center;
+}
+
+/* 모달 확인 버튼 수정 2.25 */
+.checkBtn {
+  margin: 35px 0 0;
+  text-align: center;
+
+  background: #8c1813;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 4px;
+  cursor: pointer;
+}

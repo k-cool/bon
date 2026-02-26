@@ -1,0 +1,243 @@
+/* ===== 메뉴 상세 페이지 ===== */
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+}
+
+.menu {
+  /* background: #f5f5f5; */
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-info-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 좌우 레이아웃 */
+.menu-info-top {
+  /* display: flex;
+  gap: 60px;
+  align-items: flex-start; */
+
+  display: flex;
+  /* gap: 60px; */
+  align-items: stretch;
+}
+
+/* ===== 왼쪽 이미지 ===== */
+
+.menu-img-side {
+  position: relative;
+  width: 689px; /* ← 여기만 키우면 됨 */
+  flex-shrink: 0; /* ⭐ 이미지 찌그러짐 방지 (중요) */
+}
+
+#menuImage {
+  width: 100%;
+}
+
+/* NEW 배지 */
+.badge-new {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 60px;
+}
+
+/* ===== 오른쪽 텍스트 ===== */
+
+.menu-txt-side {
+  flex: 1;
+  padding-top: 10px;
+  padding-left: 44px;
+  /* min-width: 510px; */
+}
+
+.menu-brand {
+  font-size: 22px;
+  color: #b00000;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+/* 메뉴 제목 */
+.menu-title {
+  /* font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 16px; */
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 68px;
+  color: #1d1b20;
+  margin-bottom: 30px;
+}
+
+/* 메뉴 설명 */
+.menu-desc {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* ===== 옵션 영역 ===== */
+
+.optionName {
+  display: flex;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  color: #1d1b20;
+  padding: 0 0 20px;
+}
+
+/* 옵션 박스 */
+#optionList {
+  /* border: 1px solid #ccc;
+  border-radius: 16px;
+  padding: 18px;
+  background: #fff;
+
+  width: 507;
+  height: 350;
+
+  overflow-y: auto; ⭐ 스크롤 */
+
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 18px;
+  background: #fff;
+
+  width: 420px; /* ⭐ 오른쪽 영역 꽉 채우기 */
+  height: 340px;
+
+  overflow-y: auto;
+}
+
+#optionList li:hover {
+  background: #ececec;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+#optionList::-webkit-scrollbar {
+  width: 8px;
+}
+
+#optionList::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#optionList::-webkit-scrollbar-thumb {
+  background: #d1d1d1;
+  border-radius: 20px;
+}
+
+#optionList::-webkit-scrollbar-thumb:hover {
+  background: #b5b5b5;
+}
+
+/* 옵션 한 줄 */
+.menu-option {
+  width: 100%;
+}
+
+#optionList div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 4px;
+  border-bottom: 1px solid #eee;
+  height: 50px;
+  cursor: pointer;
+}
+
+#optionList div:last-child {
+  border-bottom: none;
+}
+
+/* 체크박스 */
+#optionList input[type="checkbox"] {
+  margin-right: 12px;
+  transform: scale(1.2);
+}
+
+/* 옵션 이름 */
+#optionList span:first-of-type {
+  flex: 1;
+  font-size: 17px;
+  padding-bottom: 4px;
+}
+
+/* 옵션 가격 */
+#optionList span:last-of-type {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* ===== 가격 ===== */
+
+.menu-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+.menu-total span {
+  font-size: 22px;
+}
+
+.menu-total p {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+/* .menu-price {
+  margin-top: 40px;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: right;
+} */
+
+.detail-tab-group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
+  position: sticky;
+  top: 61px;
+  left: 0;
+  background-color: white;
+}
+
+.detail-tab {
+  height: 64px;
+  width: 400px;
+  border: 1px solid lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  color: #666;
+  cursor: pointer;
+}
+
+.detail-tab.active {
+  color: black;
+  border: 2px solid black;
+}
+
+.img-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/global/assets/favicon.ico" />
+    <title>본아이에프 - 단체주문</title>
+
+    <!-- 폰트 및 리셋 불러오는 부분 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif+KR:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/global/styles/font.css" />
+    <link rel="stylesheet" href="/global/styles/reset.css" />
+
+      <!-- 헤더 관련 -->
+    <script src="/main.js" defer></script>
+    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- 페이지별로 필요한 스타일과 스크립트 불러오는 부분 -->
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./main.js" type="module" defer></script>
+
+    <!-- 시원 추가 -->
+       <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  </head>
+  <body style="line-height: 1.5">
+    <!-- header 추가 -->
+     <header>
+      <div class="header-cont">
+        <div class="inner-wrap">
+          <div class="top1">
+            <a href="/brand/menu">
+              <img src="/global/assets/logo2.svg" alt="" />
+            </a>
+          </div>
+          <div class="top2">
+            <ul class="top-menu">
+              <div id="bar"></div>
+
+              <li id="brand" class="top-menu-item">브랜드</li>
+              <li id="chang" class="top-menu-item">창업</li>
+              <li id="event" class="top-menu-item">이벤트</li>
+              <li id="present" class="top-menu-item">선물하기</li>
+              <li id="service" class="top-menu-item">서비스안내</li>
+            </ul>
+          </div>
+          <div class="top3">
+            <ul class="mypage">
+              <li>고객센터</li>
+              <li>로그인</li>
+              <div id="ham" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header-hover sub-cont-brand">
+        <ul class="sub-menu">
+          <li>전체</li>
+          <li>
+            본죽&비빔밥
+            <ul class="sub-menu2">
+              <li>브랜드소개</li>
+              <li>메뉴소개</li>
+              <li>매장 찾기</li>
+              <li>주문하기</li>
+            </ul>
+          </li>
+          <li>
+            본죽
+            <ul class="sub-menu2">
+              <li>브랜드소개</li>
+              <li>메뉴소개</li>
+              <li>매장 찾기</li>
+              <li>주문하기</li>
+            </ul>
+          </li>
+          <li>
+            본도시락
+            <ul class="sub-menu2">
+              <li><a href="/brand/intro">브랜드소개</a></li>
+              <li><a href="/brand/menu">메뉴소개</a></li>
+              <li><a href="/brand/store">매장 찾기</a></li>
+              <li><a href="/order/type">주문하기</a></li>
+              <li><a href="/group/info">단체주문</a></li>
+            </ul>
+          </li>
+          <li>
+            본설렁탕
+            <ul class="sub-menu2">
+              <li>브랜드소개</li>
+              <li>메뉴소개</li>
+              <li>매장 찾기</li>
+              <li>주문하기</li>
+            </ul>
+          </li>
+          <li>
+            본우리반상
+            <ul class="sub-menu2">
+              <li>브랜드소개</li>
+              <li>메뉴소개</li>
+              <li>매장 찾기</li>
+              <li>주문하기</li>
+            </ul>
+          </li>
+          <li>
+            멘지
+            <ul class="sub-menu2">
+              <li>브랜드소개</li>
+              <li>메뉴소개</li>
+              <li>매장 찾기</li>
+              <li>주문하기</li>
+            </ul>
+          </li>
+          <li>
+            본흑염소·능이삼계탕
+            <ul class="sub-menu2">
+              <li>브랜드소개</li>
+              <li>메뉴소개</li>
+              <li>매장 찾기</li>
+              <li>주문하기</li>
+            </ul>
+          </li>
+          <li>
+            이지브루잉커피
+            <ul class="sub-menu2">
+              <li>브랜드소개</li>
+              <li>메뉴소개</li>
+              <li>매장 찾기</li>
+              <li>주문하기</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="header-hover sub-cont-chang">
+        <ul class="sub-menu">
+          <li>
+            창업안내
+            <ul class="sub-menu2">
+              <li>창업메인</li>
+              <li>본죽&비빔밥</li>
+              <li>본도시락</li>
+              <li>본설렁탕</li>
+              <li>본우리반상</li>
+              <li>멘지</li>
+              <li>본흑염소·능이삼계탕</li>
+              <li>이지브루잉커피</li>
+            </ul>
+          </li>
+          <li>창업상담</li>
+          <li>창업설명회</li>
+          <li>추천 상권</li>
+          <li>입점 제안</li>
+          <li>창업소식</li>
+          <li>창업F&Q</li>
+        </ul>
+      </div>
+      <div class="header-hover sub-cont-event">
+        <ul class="sub-menu-event">
+          <li>이벤트</li>
+          <li>설문조사</li>
+        </ul>
+      </div>
+      <div class="header-hover sub-cont-present">
+        <ul class="sub-menu-present">
+          <li>선물하기</li>
+          <li>기프트카드</li>
+          <li>모바일 상품권</li>
+        </ul>
+      </div>
+      <div class="header-hover sub-cont-service">
+        <ul class="sub-menu-service">
+          <li>
+            배지멤버쉽
+            <ul class="sub-menu2">
+              <li>배지멤버쉽 안내</li>
+              <li>MY 배지</li>
+            </ul>
+          </li>
+          <li>본오더 이용방법</li>
+          <li>모바일상품권 이용방법</li>
+          <li>기프트카드 이용방법</li>
+        </ul>
+      </div>
+    </header>
+
+    <nav>
+      <div class="nav-wrap">
+        <ul class="nav-menu">
+          <li>전체</li>
+          <li>본죽&비빕밤</li>
+          <li>본죽</li>
+          <li>본도시락</li>
+          <li>본설렁탕</li>
+          <li>본우리반상</li>
+          <li>멘지</li>
+          <li>본흑염소·능이삼계탕</li>
+          <li>이지브루잉커피</li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <content>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="slide-img" src="https://cdn.bonif.co.kr/banner/20250604_rIE_1749015510105_398Kb.jpg" alt="Slide 1" />
+          </div>
+          <div class="swiper-slide">
+            <img class="slide-img" src="https://cdn.bonif.co.kr/banner/20241210_9ur_1733807757252_1327Kb.jpg" alt="Slide 2" />
+          </div>
+        </div>
+
+        <div id="pagination-box">
+          <div class="swiper-pagination"></div>
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="menu">
+        <a class="menu-item"><li>본도시락</li></a>
+        <a class="menu-item"><li>본죽&비빔밥</li></a>
+        <a class="menu-item"><li>본죽</li></a>
+      </ul>
+
+      <div class="title-box" data-aos="fade-up" data-aos-duration="1000">
+        <h3 class="title-text">본도시락 단체주문</h3>
+
+        <div class="sub-title">
+          <div>
+            단체주문 신청은 <span class="stress-text"> 100개 이상 </span> 부터
+            가능하며,
+            <span class="stress-text"> 전화상담 후에 확정 </span>
+            됩니다.(3일 이내 연락)
+          </div>
+
+          <div>
+            100개 미만 주문은 배송지 근처 매장으로 전화 주시기 바랍니다.
+          </div>
+        </div>
+      </div>
+
+      <section class="contentWrapper">
+        <div class="tab" data-aos="fade-up" data-aos-duration="1000">
+          <button id="period" class="tab-btn active">정기식</button>
+          <button id="semina" class="tab-btn">세미나</button>
+          <button id="military" class="tab-btn">군부대</button>
+          <button id="school" class="tab-btn">어린이·늘봄학교</button>
+        </div>
+
+        <div class="detailImg" data-aos="fade-up" data-aos-duration="1000">
+          <img
+            src="https://cdn.bonif.co.kr/banner/20251024_h48_1761249183260_2679Kb.png"
+            alt="detailImage"
+            class="detail-img active"
+          />
+          <img src="https://cdn.bonif.co.kr/banner/20250102_3iN_1735772712384_2812Kb.png" alt="detailImage" class="detail-img" />
+          <img src="https://cdn.bonif.co.kr/banner/20250102_1ZD_1735773097935_2062Kb.png" alt="detailImage" class="detail-img" />
+          <img src="https://cdn.bonif.co.kr/banner/20251202_TED_1764652982317_1424Kb.png" alt="detailImage" class="detail-img" />
+        </div>
+      </section>
+
+      <section class="see-all-menu" data-aos="fade-up" data-aos-duration="1000">
+        <a href="/brand/menu" class="see-all-btn"
+          >전체 메뉴 보러가기<img
+            class="chevronRight"
+            src="./assets/arrow6.svg"
+            alt="arrow"
+        /></a>
+      </section>
+
+      <section class="youtube" data-aos="fade-up" data-aos-duration="1000">
+        <div>
+          <h3 class="orange-title">배송 및 포장 방법</h3>
+        </div>
+
+        <div class="video-wrap">
+          <iframe
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            allowfullscreen=""
+            frameborder="0"
+            height="536"
+            referrerpolicy="strict-origin-when-cross-origin"
+            src="https://www.youtube.com/embed/QlC-Op0cW_4?si=zBcXH4L2zH1CWMv1"
+            title="YouTube video player"
+            width="952"
+          ></iframe>
+        </div>
+      </section>
+    </content>
+
+    <section class="group-review">
+      <div>
+        <h3 class="orange-title">단체주문 고객후기</h3>
+      </div>
+
+      <div class="review-box-wrapper">
+        <div class="review-box">
+          <img src="https://www.bonif.co.kr/assets/web/front/assets/images/grouporder/review1-1.jpg" alt="reviewImage" class="review-img" />
+          <div class="orange-desc">늘봄학교 | 정기주문</div>
+          <div class="comment">“아이들이 먼저 찾는 도시락"</div>
+          <div class="talk-box">
+            <div>😀 C초등학교 선생님</div>
+            <div>
+              아이들의 도시락 반응이 좋았습니다. 본도시락 시키지 않은 날에도
+            </div>
+            <div>도시락 없냐고 물어본 아동들도 있었네요^^</div>
+          </div>
+        </div>
+
+        <div class="div"></div>
+
+        <div class="review-box">
+          <img src="https://www.bonif.co.kr/assets/web/front/assets/images/grouporder/review1-2.jpg" alt="reviewImage" class="review-img" />
+          <div class="orange-desc">초등학교 | 지인추천</div>
+          <div class="comment">
+            “직장동료, 인근학교에도 믿고 소개할 수 있는 브랜드"
+          </div>
+          <div class="talk-box">
+            <div>😀 D학교 담당자</div>
+            <div>편식하던 아이들도 잘 먹는 반찬들이 나와서,</div>
+            <div>인근 학교의 선생님들에게 소개해드렸어요.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="qna" data-aos="fade-up" data-aos-duration="1000">
+      <div class="plate-title">자주 묻는 질문</div>
+
+      <ul class="qna-list">
+        <li
+          class="qna-item aos-init aos-animate"
+          data-aos="fade-up"
+          data-aos-delay=""
+          data-aos-duration="1000"
+        >
+          <div class="accordion-header">
+            <div class="q-wrapper">
+              <span class="q">Q</span>
+              본도시락은 구입 후 몇 시간 안에 섭취해야 하나요?
+            </div>
+            <img class="chevron" src="./assets/arrow6.svg" alt="arrow" />
+          </div>
+
+          <div class="accordion-wrap">
+            <div class="question">
+              본도시락은 구입 후 몇 시간 안에 섭취해야 하나요?
+            </div>
+
+            <div class="answer">
+              매장에서 조리 후 판매되기 때문에 구매 후 2시간 이내 섭취를
+              권장합니다.<br />(기온이 높은 여름철에는 더욱 빠른 섭취를 하시기를
+              권장합니다.)​
+            </>
+          </div>
+        </li>
+        <li
+          class="qna-item aos-init aos-animate"
+          data-aos="fade-up"
+          data-aos-delay=""
+          data-aos-duration="1000"
+        >
+          <div class="accordion-header">
+            <div class="q-wrapper">
+              <span class="q">Q</span>
+              본도시락은 구입 후 몇 시간 안에 섭취해야 하나요?
+            </div>
+            <img class="chevron" src="./assets/arrow6.svg" alt="arrow" />
+          </div>
+
+          <div class="accordion-wrap">
+            <div class="question">
+              본도시락은 구입 후 몇 시간 안에 섭취해야 하나요?
+            </div>
+
+            <div class="answer">
+              매장에서 조리 후 판매되기 때문에 구매 후 2시간 이내 섭취를
+              권장합니다.<br />(기온이 높은 여름철에는 더욱 빠른 섭취를 하시기를
+              권장합니다.)​
+            </>
+          </div>
+        </li>
+        <li
+          class="qna-item aos-init aos-animate"
+          data-aos="fade-up"
+          data-aos-delay=""
+          data-aos-duration="1000"
+        >
+          <div class="accordion-header">
+            <div class="q-wrapper">
+              <span class="q">Q</span>
+              본도시락은 구입 후 몇 시간 안에 섭취해야 하나요?
+            </div>
+            <img class="chevron" src="./assets/arrow6.svg" alt="arrow" />
+          </div>
+
+          <div class="accordion-wrap">
+            <div class="question">
+              본도시락은 구입 후 몇 시간 안에 섭취해야 하나요?
+            </div>
+
+            <div class="answer">
+              매장에서 조리 후 판매되기 때문에 구매 후 2시간 이내 섭취를
+              권장합니다.<br />(기온이 높은 여름철에는 더욱 빠른 섭취를 하시기를
+              권장합니다.)​
+            </>
+          </div>
+        </li>
+        <li
+          class="qna-item aos-init aos-animate"
+          data-aos="fade-up"
+          data-aos-delay=""
+          data-aos-duration="1000"
+        >
+          <div class="accordion-header">
+            <div class="q-wrapper">
+              <span class="q">Q</span>
+              본도시락은 구입 후 몇 시간 안에 섭취해야 하나요?
+            </div>
+            <img class="chevron" src="./assets/arrow6.svg" alt="arrow" />
+          </div>
+
+          <div class="accordion-wrap">
+            <div class="question">
+              본도시락은 구입 후 몇 시간 안에 섭취해야 하나요?
+            </div>
+
+            <div class="answer">
+              매장에서 조리 후 판매되기 때문에 구매 후 2시간 이내 섭취를
+              권장합니다.<br />(기온이 높은 여름철에는 더욱 빠른 섭취를 하시기를
+              권장합니다.)​
+            </>
+          </div>
+        </li>
+        <li
+          class="qna-item aos-init aos-animate"
+          data-aos="fade-up"
+          data-aos-delay=""
+          data-aos-duration="1000"
+        >
+          <div class="accordion-header">
+            <div class="q-wrapper">
+              <span class="q">Q</span>
+              본도시락은 구입 후 몇 시간 안에 섭취해야 하나요?
+            </div>
+            <img class="chevron" src="./assets/arrow6.svg" alt="arrow" />
+          </div>
+
+          <div class="accordion-wrap">
+            <div class="question">
+              본도시락은 구입 후 몇 시간 안에 섭취해야 하나요?
+            </div>
+
+            <div class="answer">
+              매장에서 조리 후 판매되기 때문에 구매 후 2시간 이내 섭취를
+              권장합니다.<br />(기온이 높은 여름철에는 더욱 빠른 섭취를 하시기를
+              권장합니다.)​
+            </>
+          </div>
+        </li>
+        <li
+          class="qna-item aos-init aos-animate"
+          data-aos="fade-up"
+          data-aos-delay=""
+          data-aos-duration="1000"
+        >
+          <div class="accordion-header">
+            <div class="q-wrapper">
+              <span class="q">Q</span>
+              본도시락은 구입 후 몇 시간 안에 섭취해야 하나요?
+            </div>
+            <img class="chevron" src="./assets/arrow6.svg" alt="arrow" />
+          </div>
+
+          <div class="accordion-wrap">
+            <div class="question">
+              본도시락은 구입 후 몇 시간 안에 섭취해야 하나요?
+            </div>
+
+            <div class="answer">
+              매장에서 조리 후 판매되기 때문에 구매 후 2시간 이내 섭취를
+              권장합니다.<br />(기온이 높은 여름철에는 더욱 빠른 섭취를 하시기를
+              권장합니다.)​
+            </>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+        <!-- footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="contact-info">
+            <span class="label">대표전화</span>
+            <span class="number">1644-6288</span>
+            <span class="divider">|</span>
+            <span class="label">창업문의</span>
+            <span class="number">1668-3007</span>
+          </div>
+          <div class="family-site">
+            <button type="button">
+              FAMILY SITE <span class="plus">+</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <ul>
+            <li>
+              <a href="https://www.bonif.co.kr/brand/store?brdCd=BF104"
+                >회사소개</a
+              >
+            </li>
+            <li>
+              <a href="https://www.bonif.co.kr/brand/store?brdCd=BF104"
+                >이용약관</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.bonif.co.kr/brand/store?brdCd=BF104"
+                class="bold"
+                >개인(위치)정보처리방침</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.bonif.co.kr/brand/store?brdCd=BF104"
+                class="bold"
+                >위치기반 서비스 이용약관</a
+              >
+            </li>
+            <li>
+              <a href="https://www.bonif.co.kr/brand/store?brdCd=BF104"
+                >이메일 무단수집거부</a
+              >
+            </li>
+            <li>
+              <a href="https://www.bonif.co.kr/brand/store?brdCd=BF104"
+                >법적고지</a
+              >
+            </li>
+            <li>
+              <a href="https://www.bonif.co.kr/brand/store?brdCd=BF104"
+                >협력업체 모집</a
+              >
+            </li>
+            <li>
+              <a href="https://www.bonif.co.kr/brand/store?brdCd=BF104"
+                >고객센터</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-info">
+          <address>
+            <span
+              >본아이에프(주) 서울특별시 영등포구 선유로 165 (양평동3가,
+              와이피센터) 6층</span
+            >
+            <span class="divider">|</span>
+            <span>대표자명 : 이진희</span>
+            <span class="divider">|</span>
+            <span>사업자등록번호 101-86-07256</span>
+            <span class="divider">|</span>
+            <span>통신판매신고번호:2019-서울영등포-1230호</span>
+            <span class="divider">|</span>
+            <span>문의 : bonwebmaster@bongroup.co.kr</span>
+          </address>
+          <p class="copyright">
+            copyright 2025 bonif co.ltd.all rights reserved.
+          </p>
+        </div>
+
+        <div class="footer-sns">
+          <a href="https://www.instagram.com/" target="_blank" class="icon-ig">
+            <img src="/global/assets/인스타 로고.png" alt="인스타그램" />
+          </a>
+          <a
+            href="https://www.youtube.com/results?search_query=%EB%B3%B8%EC%A3%BD"
+            target="_blank"
+            class="icon-yt"
+          >
+            <img src="/global/assets/그 뭐야 유튜브 로고.png" alt="유튜브" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- AOS.init(); -->
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

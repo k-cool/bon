@@ -1,0 +1,188 @@
+[
+  {
+    "id": 1,
+    "name": "(정식) 고추장애호박찌개",
+    "price": 11000,
+    "image": "https://cdn.bonif.co.kr/cmdt/20260101_F9i_1767278198877_739Kb.jpg",
+    "ingredient": "고추장 애호박찌개, 흑미밥+계란후라이, 기본 반찬 3종, 김",
+    "option": [
+      {
+        "name": "계란후라이추가",
+        "price": 1500,
+        "isSelected": false
+      },
+      {
+        "name": "스팸 1조각",
+        "price": 1500,
+        "isSelected": false
+      },
+      {
+        "name": "핫윙콤보(윙+봉) 2조각",
+        "price": 2500,
+        "isSelected": false
+      },
+      {
+        "name": "쌈채소",
+        "price": 2500,
+        "isSelected": false
+      },
+      {
+        "name": "참고소한 김",
+        "price": 500,
+        "isSelected": false
+      }
+    ],
+    "isNew": true,
+    "content": {
+      "detail": "https://cdn.bonif.co.kr/editor/20251110085950efa28cdd-fc1f-4dde-a7ce-db08458e9c02.jpg",
+      "origin": "https://cdn.bonif.co.kr/editor/2025111011015536d1fab5-1bdb-4dff-8304-e9cae2b13344.jpg",
+      "al": "../images/al.png"
+    }
+  },
+  {
+    "id": 2,
+    "name": "[세트] 항공 깻잎고추장불고기김밥",
+    "price": 10500,
+    "image": "https://cdn.bonif.co.kr/cmdt/20250923_BqO_1758620491143_690Kb.jpg",
+    "ingredient": "깻잎고추장불고기김밥 4pcs, 핫윙, 감자튀김",
+    "option": [
+      { "name": "핫윙 2조각 추가", "price": 2500 },
+      { "name": "콜라 추가", "price": 2000 }
+    ],
+    "isNew": true,
+    "content": {
+      "detail": "https://cdn.bonif.co.kr/editor/20251110085950efa28cdd-fc1f-4dde-a7ce-db08458e9c02.jpg",
+      "origin": "https://cdn.bonif.co.kr/editor/2025111011015536d1fab5-1bdb-4dff-8304-e9cae2b13344.jpg",
+      "al": "../images/al.png"
+    }
+  },
+  {
+    "id": 3,
+    "name": "[세트] 생(生) 와사비 묵은지참치김밥",
+    "price": 11000,
+    "image": "https://cdn.bonif.co.kr/cmdt/20250923_DWP_1758620473262_653Kb.jpg",
+    "ingredient": "와사비 묵은지참치김밥 4pcs, 핫윙, 감자튀김",
+    "option": [
+      { "name": "와사비 추가", "price": 500 },
+      { "name": "콜라 추가", "price": 2000 }
+    ],
+    "isNew": true,
+    "content": {
+      "detail": "https://cdn.bonif.co.kr/editor/20251110085950efa28cdd-fc1f-4dde-a7ce-db08458e9c02.jpg",
+      "origin": "https://cdn.bonif.co.kr/editor/2025111011015536d1fab5-1bdb-4dff-8304-e9cae2b13344.jpg",
+      "al": "../images/al.png"
+    }
+  },
+  {
+    "id": 4,
+    "name": "[세트] 저염스팸치즈김밥",
+    "price": 11000,
+    "image": "https://cdn.bonif.co.kr/cmdt/20250923_hqf_1758620440931_654Kb.jpg",
+    "ingredient": "저염스팸치즈김밥 4pcs, 핫윙, 감자튀김",
+    "option": [
+      { "name": "치즈 추가", "price": 1000 },
+      { "name": "핫윙 2조각 추가", "price": 2500 }
+    ],
+    "isNew": true,
+    "content": {
+      "detail": "https://cdn.bonif.co.kr/editor/20251110085950efa28cdd-fc1f-4dde-a7ce-db08458e9c02.jpg",
+      "origin": "https://cdn.bonif.co.kr/editor/2025111011015536d1fab5-1bdb-4dff-8304-e9cae2b13344.jpg",
+      "al": "../images/al.png"
+    }
+  },
+  {
+    "id": 5,
+    "name": "[세트] 스프+한컵 닭가슴살 샐러드",
+    "price": 10400,
+    "image": "https://cdn.bonif.co.kr/cmdt/20250922_xau_1758506491775_562Kb.jpg",
+    "ingredient": "닭가슴살 샐러드, 스프, 미니 바게트",
+    "option": [
+      { "name": "드레싱 추가", "price": 500 },
+      { "name": "닭가슴살 추가", "price": 3000 }
+    ],
+    "isNew": true,
+    "content": {
+      "detail": "https://cdn.bonif.co.kr/editor/20251110085950efa28cdd-fc1f-4dde-a7ce-db08458e9c02.jpg",
+      "origin": "https://cdn.bonif.co.kr/editor/2025111011015536d1fab5-1bdb-4dff-8304-e9cae2b13344.jpg",
+      "al": "../images/al.png"
+    }
+  },
+  {
+    "id": 6,
+    "name": "[세트] 스프+한컵 그릴드닭구이 샐러드",
+    "price": 10700,
+    "image": "https://cdn.bonif.co.kr/cmdt/20250922_n0P_1758506662113_564Kb.jpg",
+    "ingredient": "그릴드 닭구이 샐러드, 스프, 미니 바게트",
+    "option": [
+      { "name": "닭구이 추가", "price": 3000 },
+      { "name": "스프 추가", "price": 2000 }
+    ],
+    "isNew": true,
+    "content": {
+      "detail": "https://cdn.bonif.co.kr/editor/20251110085950efa28cdd-fc1f-4dde-a7ce-db08458e9c02.jpg",
+      "origin": "https://cdn.bonif.co.kr/editor/2025111011015536d1fab5-1bdb-4dff-8304-e9cae2b13344.jpg",
+      "al": "../images/al.png"
+    }
+  },
+  {
+    "id": 7,
+    "name": "[세트] 스프+한컵 카프레제 샐러드",
+    "price": 10700,
+    "image": "https://cdn.bonif.co.kr/cmdt/20250922_CsI_1758506713852_559Kb.jpg",
+    "ingredient": "카프레제 샐러드, 스프, 미니 바게트",
+    "option": [
+      { "name": "모짜렐라 추가", "price": 2000 },
+      { "name": "발사믹 소스 추가", "price": 500 }
+    ],
+    "isNew": true,
+    "content": {
+      "detail": "https://cdn.bonif.co.kr/editor/20251110085950efa28cdd-fc1f-4dde-a7ce-db08458e9c02.jpg",
+      "origin": "https://cdn.bonif.co.kr/editor/2025111011015536d1fab5-1bdb-4dff-8304-e9cae2b13344.jpg",
+      "al": "../images/al.png"
+    }
+  },
+  {
+    "id": 8,
+    "name": "[단품] 항공 깻잎고추장불고기김밥",
+    "price": 4000,
+    "image": "https://cdn.bonif.co.kr/cmdt/20250922_2qr_1758505946945_496Kb.jpg",
+    "ingredient": "깻잎고추장불고기김밥 1줄",
+    "option": [{ "name": "곱빼기", "price": 1000 }],
+    "isNew": false,
+    "content": {
+      "detail": "https://cdn.bonif.co.kr/editor/20251110085950efa28cdd-fc1f-4dde-a7ce-db08458e9c02.jpg",
+      "origin": "https://cdn.bonif.co.kr/editor/2025111011015536d1fab5-1bdb-4dff-8304-e9cae2b13344.jpg",
+      "al": "../images/al.png"
+    }
+  },
+  {
+    "id": 9,
+
+    "name": "[단품] 생(生) 와사비 묵은지참치김밥",
+    "price": 4500,
+    "image": "https://cdn.bonif.co.kr/cmdt/20250922_CEJ_1758506056194_469Kb.jpg",
+    "ingredient": "와사비 묵은지참치김밥 1줄",
+    "option": [{ "name": "와사비 추가", "price": 500 }],
+    "isNew": false,
+    "content": {
+      "detail": "https://cdn.bonif.co.kr/editor/20251110085950efa28cdd-fc1f-4dde-a7ce-db08458e9c02.jpg",
+      "origin": "https://cdn.bonif.co.kr/editor/2025111011015536d1fab5-1bdb-4dff-8304-e9cae2b13344.jpg",
+      "al": "../images/al.png"
+    }
+  },
+  {
+    "id": 10,
+
+    "name": "단호박죽",
+    "price": 4500,
+    "image": "https://cdn.bonif.co.kr/cmdt/20250922_EFq_1758506124589_494Kb.jpg",
+    "ingredient": "단호박, 찹쌀, 우유",
+    "option": [{ "name": "우유 추가", "price": 500 }],
+    "isNew": false,
+    "content": {
+      "detail": "https://cdn.bonif.co.kr/editor/20251110085950efa28cdd-fc1f-4dde-a7ce-db08458e9c02.jpg",
+      "origin": "https://cdn.bonif.co.kr/editor/2025111011015536d1fab5-1bdb-4dff-8304-e9cae2b13344.jpg",
+      "al": "../images/al.png"
+    }
+  }
+]

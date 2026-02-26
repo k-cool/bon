@@ -1,0 +1,524 @@
+/* 기본 폰트 및 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pretendard", "Noto Serif KR", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* --- 0. 로딩 화면 레이어 --- */
+#loading-layer {
+  display: none; /* JS에서 제어 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 10000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- 1. 헤더 고정 영역 --- */
+.fixed-header {
+  width: 100%;
+  height: 160px;
+  background: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* --- 2. 메인 컨테이너 --- */
+.container {
+  min-width: 1080px;
+  max-width: 1440px;
+  margin: auto;
+  padding: 70px 0px 150px;
+}
+
+.top-wrap {
+  display: flex;
+  height: 84px;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.title-section {
+  font-size: 57px;
+  font-weight: 500;
+  line-height: 84px;
+  color: #000;
+}
+
+.menu-btn-container {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+#all-menu,
+#foreign-menu {
+  display: inline-flex;
+  align-items: center;
+  height: 48px;
+  padding: 0 24px;
+  border: 1px solid #e1e1e1;
+  border-radius: 30px;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  color: #1d1b20;
+  transition: all 0.2s ease;
+}
+
+#all-menu:hover,
+#foreign-menu:hover {
+  background-color: #f9f9f9;
+  border-color: #ccc;
+}
+
+/* --- 3. 메뉴 카테고리 탭 --- */
+.tap-header {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.menu-tabs {
+  display: grid;
+  /* 한 줄에 6개씩 똑같은 너비(1fr)로 나눔 */
+  grid-template-columns: repeat(6, 1fr);
+  list-style: none;
+  margin: 0;
+  border-top: 1px solid #e1e1e1;
+  border-left: 1px solid #e1e1e1;
+}
+
+.menu-tabs li {
+  height: 65px; /* 칸의 높이 */
+  display: flex;
+  align-items: center; /* 글자 세로 중앙 */
+  justify-content: center; /* 글자 가로 중앙 */
+  font-size: 20px;
+  color: #666;
+  background-color: #fff;
+  border-right: 1px solid #e1e1e1; /* 오른쪽 테두리 */
+  border-bottom: 1px solid #e1e1e1; /* 아래쪽 테두리 */
+  cursor: pointer;
+  padding: 17px 0px;
+  text-align: center;
+}
+
+.menu-tabs li.active {
+  font-weight: bold;
+  color: #1d1b20;
+  /* 검은색 굵은 테두리 강조 */
+  outline: 2px solid #000;
+  outline-offset: -2px; /* 테두리가 안쪽으로 생기게 함 */
+  z-index: 1; /* 테두리가 다른 칸보다 위로 오게 함 */
+}
+
+.menu-tab-list li.empty {
+  cursor: default;
+}
+
+/* --- 4. 검색 태그 및 정렬 영역 --- */
+.cont-wrap {
+  max-width: 1440px;
+  margin-top: 60px;
+  width: 100%;
+}
+
+.con-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.tag-area {
+  display: flex;
+  gap: 30px;
+}
+
+.tag-title {
+  font-size: 17px;
+  font-weight: 500;
+  color: #000;
+  padding-top: 6px;
+  white-space: nowrap;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 8px;
+  max-width: 650px;
+}
+
+.tag-list li {
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-size: 13px;
+  color: #000;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#btn-reset {
+  background-color: transparent !important;
+  color: #888 !important;
+  text-decoration: underline;
+  padding-left: 10px;
+}
+
+.sort-area {
+  padding-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.sort-list,
+.type-list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sort-list li {
+  font-size: 14px;
+  color: #999;
+  cursor: pointer;
+}
+
+.sort-list li:hover {
+  color: #000;
+}
+
+.tag-list li.active {
+  background-color: #fcebeb; /* 본죽 특유의 연한 붉은 배경 */
+  color: #e31937; /* 본죽 시그니처 레드 글자색 */
+  /* 만약 테두리도 넣고 싶다면 아래 주석 해제 */
+  border: 1px solid #e31937;
+}
+
+/* --- 5. 메뉴 그리드 --- */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px 20px;
+}
+
+.menu-card {
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-img-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background-color: #f9f9f9;
+}
+
+.menu-img-wrapper img:not(.badge-new):not(.heart-img) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.menu-card:hover .menu-img-wrapper img:not(.badge-new):not(.heart-img) {
+  transform: scale(1.05);
+}
+
+.badge-new {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 44px !important;
+  height: auto !important;
+  z-index: 10;
+}
+
+.wish-icon {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 15;
+  transition: background 0.2s;
+}
+
+.wish-icon:hover {
+  background: #fff;
+}
+
+.menu-info {
+  margin-top: 15px;
+}
+
+.menu-name {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.menu-price {
+  font-size: 18px;
+  font-weight: 800;
+  color: #1d1b20;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.original-price {
+  font-size: 14px;
+  color: #a5a5a5;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+.tag-group {
+  margin-top: 10px;
+}
+
+.tag-item {
+  display: inline-block;
+  font-size: 11px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background-color: #fff0f0;
+  color: #ff6b6b;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+/* --- 6. 모달 스타일 --- */
+.modal-overlay {
+  display: none; /* 중요: 처음엔 숨김 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 모달 박스 */
+.modal-content {
+  background: #fff;
+  padding: 30px;
+  width: 400px;
+  height: 251px;
+  text-align: center;
+}
+
+.modal-body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.pop-wrap {
+  max-width: 360px;
+  padding: 3.125rem 1.25rem 3.75rem;
+}
+
+.btn-confirm {
+  margin: 35px 0 0;
+  text-align: center;
+
+  background: #8c1813;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* --- 7. 푸터 스타일 --- */
+.footer {
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  padding: 60px 0;
+  margin-top: 100px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contact-info .number {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  margin-left: 5px;
+}
+
+.footer-menu {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-menu a {
+  font-size: 14px;
+  color: #666;
+}
+
+.footer-menu a:hover {
+  text-decoration: underline;
+}
+
+.footer-info-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.company-details p {
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 5px;
+}
+
+/* 요청하신 수정 사항 반영 */
+.copyright {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+.social-icons {
+  padding: 20px 0px 0px;
+  display: flex;
+  gap: 10px;
+}
+
+/* SNS 아이콘을 감싸는 <a> 태그 스타일 */
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #000; /* 검은색 배경 */
+  border-radius: 50%; /* 원형 */
+  transition: opacity 0.3s;
+}
+
+.social-icons a:hover {
+  opacity: 0.8;
+}
+
+/* 아이콘 이미지 스타일 */
+.social-icons img {
+  width: 20px;
+  height: auto;
+  /* 원본 아이콘이 검은색일 경우 하얗게 반전시키는 필터 */
+  filter: brightness(0) invert(1);
+}
+
+/* 패밀리 사이트 드롭다운 */
+.family-site {
+  position: relative;
+}
+
+.btn-family-large {
+  width: 220px;
+  height: 50px;
+  background: #f5f5f5;
+  border: 1px solid #eee;
+  border-radius: 25px;
+  padding: 0 25px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.family-list {
+  display: none;
+  position: absolute;
+  /* 아래로 드롭다운되도록 수정 */
+  top: 55px; /* 버튼 높이(50px)보다 약간 크게 설정하여 아래에 배치 */
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  /* 그림자 방향도 아래쪽으로 자연스럽게 수정 */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  z-index: 100;
+}
+
+.family-site.is-open .family-list {
+  display: block;
+}
+
+.family-list a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.family-list a:hover {
+  background: #f9f9f9;
+  color: #e31937;
+}

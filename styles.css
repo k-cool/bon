@@ -1,0 +1,485 @@
+.body {
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1,
+li {
+  cursor: pointer;
+}
+
+.header-cont {
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid lightgray;
+}
+
+.header-hover {
+  z-index: 11000;
+}
+
+.inner-wrap {
+  /* background-color: white; */
+  width: 960px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top1 {
+  background-color: white;
+  width: 178px;
+}
+.logo-image {
+  background-image: url(../logo2.svg);
+}
+.top2 {
+  width: 50%;
+  height: 100%;
+}
+.top-menu {
+  position: relative;
+  /* background-color: white; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 21px;
+  height: 100%;
+}
+
+.top-menu-item:hover {
+  color: brown;
+}
+
+.top3 {
+  width: 20%;
+}
+.mypage {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+nav {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  border-bottom: 1px solid rgb(210, 207, 207);
+  border-top: 1px solid rgb(210, 207, 207);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
+.nav-wrap {
+  width: 55%;
+  height: 60px;
+  margin: 0 auto;
+  /* background-color: white; */
+}
+.nav-menu {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.drop1 {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  width: 30px;
+  height: 22px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  border-radius: 2px;
+}
+
+/* 여기서 부터 메인!!!!!!!!!!!!!1 */
+.top-inner {
+  width: 90%;
+  background-color: white;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-box {
+  background-color: white;
+  width: 100%;
+  height: 100px;
+}
+.btn-box {
+  display: flex;
+  justify-content: space-between;
+}
+.btn-area {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+.down-box {
+  background-color: white;
+  height: 800px;
+}
+.menu-cont {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.list-depth1 {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 180px;
+  padding-right: 180px;
+}
+.list-depth2 {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.list-depth3 {
+  font-size: 18px;
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+.line {
+  height: 100px;
+  width: 200px;
+  background-color: white;
+  border-top: 2px solid black;
+  border-bottom: 0.5px solid gray;
+  display: flex;
+  align-items: center;
+}
+.jump {
+  height: 500px;
+}
+
+header {
+  word-break: keep-all;
+  white-space: nowrap;
+}
+
+#bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: brown;
+  width: 0px;
+  transition: all 0.5s ease;
+}
+
+.show {
+  display: block !important;
+}
+
+.sub-cont-brand {
+  position: absolute;
+  display: none;
+  /* display: none; */
+  width: 100%;
+  height: 400px;
+  background-color: white;
+  /* z-index: 1000; */
+  border-bottom: 1px solid lightgray;
+}
+
+.sub-cont-chang {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 500px;
+  background-color: white;
+  /* z-index: 1000; */
+  border-bottom: 1px solid lightgray;
+}
+.sub-cont-event {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  /* z-index: 1000; */
+  border-bottom: 1px solid lightgray;
+}
+.sub-cont-present {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  /* z-index: 1000; */
+  border-bottom: 1px solid lightgray;
+}
+.sub-cont-service {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  /* z-index: 1000; */
+  border-bottom: 1px solid lightgray;
+}
+
+.sub-menu {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 120px;
+  padding-right: 120px;
+  /* 2차수정 */
+  font-size: 16px;
+  font-weight: 600;
+  gap: 40px;
+  text-align: center;
+  background-color: white;
+}
+.sub-menu2 {
+  font-size: 15px;
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.sub-menu-event {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 500px;
+  padding-right: 500px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  background-color: white;
+}
+.sub-menu-present {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 350px;
+  padding-right: 350px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  background-color: white;
+}
+.sub-menu-service {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 400px;
+  padding-right: 400px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  background-color: white;
+  /* border-bottom: 1px solid lightgray; */
+}
+.all-menu {
+  position: fixed;
+  width: 100%;
+  /* height: 3000px; */
+  z-index: 12000;
+  /* display: none; */
+  /* transition: all 0.5s ease; */
+  /* 애니메이션용 */
+  overflow-y: auto;
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease;
+}
+.all-menu.open {
+  /* display: block; */
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+img {
+  cursor: pointer;
+}
+
+/* footer 세팅 */
+.site-footer {
+  width: 100%;
+  padding: 80px 0 20px 0;
+  clear: both;
+  border-top: 1px solid lightgray;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 상단 섹션 */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  font-size: 18px;
+}
+
+.contact-info .label {
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+.contact-info .number {
+  font-weight: 700;
+}
+
+.contact-info .divider {
+  margin: 0 15px;
+  color: #ddd;
+}
+
+.family-site button {
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  color: #888;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.family-site .plus {
+  font-size: 20px;
+}
+
+/* 네비게이션 */
+.footer-nav {
+  margin-bottom: 25px;
+}
+
+.footer-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-nav a {
+  font-size: 14px;
+  color: #333;
+}
+
+.footer-nav a.bold {
+  font-weight: 700;
+}
+
+/* 기업 정보 */
+.footer-info {
+  font-size: 13px;
+  color: #888;
+  line-height: 1.8;
+}
+
+.footer-info .divider {
+  margin: 0 8px;
+  color: #eee;
+}
+
+.copyright {
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: #bbb;
+}
+
+/* SNS 아이콘 (이미지가 없으므로 원형으로 대체) */
+.footer-sns {
+  margin-top: 25px;
+  display: flex;
+  gap: 10px;
+}
+
+.footer-sns a {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  background-image: none;
+  /* 실제 아이콘 사용 시 배경 이미지(background-image) 추가 */
+}
+
+.footer-sns img {
+  width: 100%; /* 부모(.sns-link) 크기에 맞춤 */
+  height: 100%;
+  object-fit: contain; /* 이미지 비율 유지하며 꽉 채움 */
+  display: block;
+}
+/* 태규 애니메이션 수정 */
+.sub-menu2 > li {
+  position: relative;
+}
+
+.sub-menu2 > li:hover {
+  color: brown;
+}
+.sub-menu2 > li::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  left: 0;
+  height: 2px;
+  background-color: brown;
+
+  transition: width 0.3s;
+  transition: opacity 0.3 ease;
+  opacity: 0;
+}
+.sub-menu2 > li:hover::after {
+  width: 100%;
+  opacity: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* 태규 애니메이션 수정*/

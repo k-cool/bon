@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "name": "본도시락 강남구청역점",
+    "city": "서울특별시",
+    "district": "강남구",
+    "address": "서울특별시 강남구 선릉로 649 (논현동, 대훈빌딩)",
+    "phone": "02-542-4282",
+    "services": { "delivery": true, "takeout": true, "dineIn": true },
+    "isFavorite": false,
+    "position": { "x": 37.5173, "y": 127.0412 }
+  },
+  {
+    "id": 2,
+    "name": "미도인 성수",
+    "city": "서울특별시",
+    "district": "성동구",
+    "address": "서울특별시 성동구 연무장7길 11",
+    "phone": "02-465-1990",
+    "services": { "delivery": false, "takeout": true, "dineIn": true },
+    "isFavorite": true,
+    "position": { "x": 37.5445, "y": 127.056 }
+  },
+  {
+    "id": 3,
+    "name": "땀땀 강남본점",
+    "city": "서울특별시",
+    "district": "강남구",
+    "address": "서울특별시 강남구 강남대로98길 12-5",
+    "phone": "02-554-8892",
+    "services": { "delivery": true, "takeout": true, "dineIn": true },
+    "isFavorite": false,
+    "position": { "x": 37.5006, "y": 127.0278 }
+  },
+  {
+    "id": 4,
+    "name": "카미타케제면소",
+    "city": "서울특별시",
+    "district": "서초구",
+    "address": "서울특별시 서초구 서초대로74길 11",
+    "phone": "02-522-0051",
+    "services": { "delivery": true, "takeout": false, "dineIn": true },
+    "isFavorite": false,
+    "position": { "x": 37.4958, "y": 127.0276 }
+  },
+  {
+    "id": 5,
+    "name": "파이팅커피 홍대점",
+    "city": "서울특별시",
+    "district": "마포구",
+    "address": "서울특별시 마포구 와우산로 21길 12",
+    "phone": "070-1234-5678",
+    "services": { "delivery": true, "takeout": true, "dineIn": false },
+    "isFavorite": true,
+    "position": { "x": 37.5532, "y": 126.922 }
+  },
+  {
+    "id": 6,
+    "name": "중앙해장 삼성점",
+    "city": "서울특별시",
+    "district": "강남구",
+    "address": "서울특별시 강남구 영동대로101길 7",
+    "phone": "02-558-7905",
+    "services": { "delivery": false, "takeout": true, "dineIn": true },
+    "isFavorite": false,
+    "position": { "x": 37.5083, "y": 127.0637 }
+  },
+  {
+    "id": 7,
+    "name": "다운타우너 안국",
+    "city": "서울특별시",
+    "district": "종로구",
+    "address": "서울특별시 종로구 북촌로 6-4",
+    "phone": "02-743-3696",
+    "isFavorite": true,
+    "services": { "delivery": true, "takeout": true, "dineIn": true },
+    "position": { "x": 37.5772, "y": 126.9856 }
+  },
+  {
+    "id": 8,
+    "name": "오레노카츠 송파점",
+    "city": "서울특별시",
+    "district": "송파구",
+    "address": "서울특별시 송파구 가락로 151",
+    "phone": "02-418-0505",
+    "services": { "delivery": true, "takeout": true, "dineIn": true },
+    "isFavorite": false,
+    "position": { "x": 37.5015, "y": 127.1105 }
+  },
+  {
+    "id": 9,
+    "name": "진미평양냉면",
+    "city": "서울특별시",
+    "district": "강남구",
+    "address": "서울특별시 강남구 학동로 305-3",
+    "phone": "02-515-3511",
+    "services": { "delivery": false, "takeout": true, "dineIn": true },
+    "isFavorite": false,
+    "position": { "x": 37.5161, "y": 127.036 }
+  },
+  {
+    "id": 10,
+    "name": "엘샌드위치 여의도",
+    "city": "서울특별시",
+    "district": "영등포구",
+    "address": "서울특별시 영등포구 국제금융로 70",
+    "phone": "02-780-1254",
+    "services": { "delivery": true, "takeout": true, "dineIn": true },
+    "isFavorite": false,
+    "position": { "x": 37.5212, "y": 126.9312 }
+  },
+  {
+    "id": 11,
+    "name": "은행골 구로디지털본점",
+    "city": "서울특별시",
+    "district": "구로구",
+    "address": "서울특별시 구로구 디지털로32길 92",
+    "phone": "02-859-4988",
+    "services": { "delivery": true, "takeout": true, "dineIn": true },
+    "isFavorite": true,
+    "position": { "x": 37.4851, "y": 126.897 }
+  },
+  {
+    "id": 12,
+    "name": "잭슨피자 한남점",
+    "city": "서울특별시",
+    "district": "용산구",
+    "address": "서울특별시 용산구 독서당로 46",
+    "phone": "02-798-9335",
+    "services": { "delivery": true, "takeout": true, "dineIn": false },
+    "isFavorite": false,
+    "position": { "x": 37.5348, "y": 127.009 }
+  },
+  {
+    "id": 13,
+    "name": "을밀대 마포본점",
+    "city": "서울특별시",
+    "district": "마포구",
+    "address": "서울특별시 마포구 숭문길 24",
+    "phone": "02-717-1922",
+    "services": { "delivery": false, "takeout": true, "dineIn": true },
+    "isFavorite": false,
+    "position": { "x": 37.5478, "y": 126.9458 }
+  },
+  {
+    "id": 14,
+    "name": "샐러디 선릉점",
+    "city": "서울특별시",
+    "district": "강남구",
+    "address": "서울특별시 강남구 선릉로 519",
+    "phone": "02-567-8255",
+    "services": { "delivery": true, "takeout": true, "dineIn": true },
+    "isFavorite": false,
+    "position": { "x": 37.5055, "y": 127.0485 }
+  },
+  {
+    "id": 15,
+    "name": "팀호완 삼성점",
+    "city": "서울특별시",
+    "district": "강남구",
+    "address": "서울특별시 강남구 봉은사로 633",
+    "phone": "02-6207-3082",
+    "services": { "delivery": true, "takeout": true, "dineIn": true },
+    "isFavorite": true,
+    "position": { "x": 37.5134, "y": 127.0617 }
+  },
+  {
+    "id": 16,
+    "name": "현대정육식당",
+    "city": "서울특별시",
+    "district": "강남구",
+    "address": "서울특별시 강남구 선릉로146길 5",
+    "phone": "02-540-7705",
+    "services": { "delivery": false, "takeout": false, "dineIn": true },
+    "isFavorite": false,
+    "position": { "x": 37.5218, "y": 127.0401 }
+  },
+  {
+    "id": 17,
+    "name": "블루보틀 역삼 카페",
+    "city": "서울특별시",
+    "district": "강남구",
+    "address": "서울특별시 강남구 테헤란로 129",
+    "phone": "02-1533-6906",
+    "services": { "delivery": false, "takeout": true, "dineIn": true },
+    "isFavorite": false,
+    "position": { "x": 37.499, "y": 127.0315 }
+  },
+  {
+    "id": 18,
+    "name": "우래옥",
+    "city": "서울특별시",
+    "district": "중구",
+    "address": "서울특별시 중구 창경궁로 62-29",
+    "phone": "02-2265-0151",
+    "services": { "delivery": false, "takeout": true, "dineIn": true },
+    "isFavorite": true,
+    "position": { "x": 37.5682, "y": 126.9987 }
+  },
+  {
+    "id": 19,
+    "name": "샌드위밋 광화문점",
+    "city": "부산특별시",
+    "district": "부산진구",
+    "address": "부산특별시 부산진구 종로3길 17",
+    "phone": "02-2158-7901",
+    "services": { "delivery": true, "takeout": true, "dineIn": true },
+    "isFavorite": false,
+    "position": { "x": 35.1587, "y": 129.0592 }
+  },
+  {
+    "id": 20,
+    "name": "구복만두",
+    "city": "부산특별시",
+    "district": "해운대구",
+    "address": "부산특별시 해운대구 두텁바위로 7",
+    "phone": "02-797-8656",
+    "services": { "delivery": true, "takeout": true, "dineIn": true },
+    "isFavorite": false,
+    "position": { "x": 35.1632, "y": 129.1636 }
+  }
+]
